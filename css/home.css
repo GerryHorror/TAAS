@@ -24,14 +24,15 @@ header {
     position: relative;
     z-index: 2;
     padding: 2rem;
-    max-width: 1200px; /* Adjust width as needed */
+    max-width: 1200px; 
 }
 
 /* Text styles */
 .heading-primary {
-    font-size: 6rem; /* Adjust the font size to your liking */
+    font-size: 6rem; 
     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+     /* Add text shadow for better readability */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .sub-heading {

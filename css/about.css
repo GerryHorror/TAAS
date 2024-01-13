@@ -3,8 +3,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  /* Set the background color to a cream, not too white*/
-  background-color: #f7fafc;
+  background-color: #f5f5f5;
   color: #2d3748;
 }
 
@@ -24,7 +23,7 @@ nav {
 .nav-brand {
   font-size: 1.875rem;
   font-weight: bold;
-  color: white;
+  color: #f5f5f5;
   text-decoration: none;
   position: sticky;
 }
@@ -50,16 +49,16 @@ nav {
 }
 
 /* h2 heading style */
-.h2-heading{
-    display: inline-block;
-    padding: 0.625rem 1.25rem;
-    border: 0.125rem solid #000;
-    border-radius: 1.5625rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
+.h2-heading {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 0.125rem solid #000;
+  border-radius: 1.5625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
 }
 
 /* Fade-in animations */
@@ -113,6 +112,7 @@ nav {
   width: 100%;
   /* Maintain aspect ratio */
   height: auto;
+  border-radius: 0.625rem;
 }
 
 .image-container:first-child img {
@@ -127,6 +127,47 @@ nav {
   flex: 2;
   padding: 20px;
   text-align: left;
+}
+
+/* Vission and Mission styles */
+.vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.mission-statement,
+.vision-statement {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.vision-mission h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 0.125rem solid #000;
+  border-radius: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.vision-mission p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .mission-statement,
+  .vision-statement {
+    flex: 0 0 calc(50% - 1rem);
+  }
 }
 
 /* Footer styles */

@@ -1,0 +1,145 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  /* Set the background color to a cream, not too white*/
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a202c;
+  position: sticky;
+  top: 0;
+  /* Ensure it stays above other content */
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position: sticky;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.nav-link:hover {
+  color: #a0aec0;
+}
+
+/* h2 heading style */
+.h2-heading{
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    border: 0.125rem solid #000;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 3.2s ease forwards;
+}
+
+.fadeInUp {
+  animation: fadeInUp 3.2s ease forwards;
+}
+
+/* Content styles */
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container img {
+  /* Make image width responsive to the container size */
+  width: 100%;
+  /* Maintain aspect ratio */
+  height: auto;
+}
+
+.image-container:first-child img {
+  animation: fadeInDown 2s ease-out;
+}
+
+.image-container:last-child img {
+  animation: fadeInUp 2s ease-out;
+}
+
+.text-container {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Footer styles */
+footer {
+  background-color: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}

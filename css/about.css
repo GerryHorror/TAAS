@@ -3,8 +3,8 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #f5f5f5;
-  color: #2d3748;
+  background-color: #1c232f; 
+  color: #f5f5f5;
 }
 
 /* Navigation styles */
@@ -52,13 +52,12 @@ nav {
 .h2-heading {
   display: inline-block;
   padding: 0.625rem 1.25rem;
-  border: 0.125rem solid #000;
+  border: 0.125rem solid #f5f5f5;
   border-radius: 1.5625rem;
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
 }
 
 /* Fade-in animations */
@@ -148,18 +147,18 @@ nav {
 
 .vision-mission h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #f5f5f5;
   margin-bottom: 1rem;
   display: inline-block;
   padding: 0.625rem 1.25rem;
-  border: 0.125rem solid #000;
+  border: 0.125rem solid #f5f5f5;
   border-radius: 1.5625rem;
   text-transform: uppercase;
 }
 
 .vision-mission p {
   font-size: 1rem;
-  color: #666;
+  color: #f5f5f5;
   line-height: 1.6;
 }
 

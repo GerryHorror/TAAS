@@ -87,6 +87,49 @@ nav {
   transform: translateY(-5px);
 }
 
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f5f5f5;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  display: block; /* Remove any default inline spacing */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Limit the image size to not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation: fade 1.5s;
+  animation-name: fade;
+  animation: fade 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
 /* Footer styles */
 footer {
   background-color: #2d3748;

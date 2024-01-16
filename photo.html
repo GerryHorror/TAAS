@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/photo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -25,17 +26,25 @@
         <p>Here at TAAS (Pty) Ltd we believe in giving back to the community. Below you'll find some of the work we've
             done in various underprivileged communities. </p>
         <div class="gallery-grid">
-            <div class="gallery-item" onclick="openLightbox(); currentLightboxSlide(1)">
-                <img src="/images/charity-img-1.jpg" alt="">
+            <div class="gallery-item">
+                <a href="/images/charity-img-1.jpg" data-lightbox="mygallery" data-title="Loading Aid Supplies">
+                    <img src="/images/charity-img-1.jpg" alt="">
+                </a>
             </div>
-            <div class="gallery-item" onclick="openLightbox(); currentLightboxSlide(2)">
-                <img src="/images/charity-img-2.jpg" alt="">
+            <div class="gallery-item">
+                <a href="/images/charity-img-2.jpg" data-lightbox="mygallery" data-title="Teamwork in Action">
+                    <img src="/images/charity-img-2.jpg" alt="">
+                </a>
             </div>
-            <div class="gallery-item" onclick="openLightbox(); currentLightboxSlide(3)">
-                <img src="/images/charity-img-3.jpg" alt="">
+            <div class="gallery-item">
+                <a href="/images/charity-img-3.jpg" data-lightbox="mygallery" data-title="Sorting Donations">
+                    <img src="/images/charity-img-3.jpg" alt="">
+                </a>
             </div>
-            <div class="gallery-item" onclick="openLightbox(); currentLightboxSlide(4)">
-                <img src="/images/charity-img-4.jpg" alt="">
+            <div class="gallery-item">
+                <a href="/images/charity-img-4.jpg" data-lightbox="mygallery" data-title="Community Distribution">
+                    <img src="/images/charity-img-4.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -61,6 +70,7 @@
     <footer>
         <p>&copy; 2024 TAAS Pty (Ltd). All rights reserved.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script src="/js/photo.js"></script>
 </body>
 

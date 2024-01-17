@@ -47,6 +47,45 @@ nav {
   color: #a0aec0;
 }
 
+header h1, .main-message h2 {
+  margin: 0;
+  color: #333;
+}
+.main-message {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.content-block {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.content-block h2 {
+  color: #333;
+  font-weight: 700;
+}
+.content-block p {
+  color: #666;
+  line-height: 1.5;
+}
+.content-block img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
 /* Footer styles */
 footer {
     background-color: #2d3748;
